@@ -3,7 +3,7 @@
 # We will engineer features to simulate "Time-to-Failure" for PySpark Survival Analysis.
 
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, rand, randn, when, round, exp
+from pyspark.sql.functions import col, rand, randn, when, round, exp, abs
 
 spark = SparkSession.builder.appName("Machine_Failure_Simulation").getOrCreate()
 print("Starting Industrial Machine Failure Data Simulation...")
